@@ -24,7 +24,7 @@ development:
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: sagar
   password: Dsagar!123
-  #socket: /var/run/mysqld/mysqld.sock
+  socket: /var/run/mysqld/mysqld.sock
   database: app_track_api_development
   #/var/run/mysqld/mysqld.sock
 
