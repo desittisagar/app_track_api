@@ -49,7 +49,7 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
+  #<<: *default
   adapter: mysql2
   database: app_track_api_production
   username: sagar
