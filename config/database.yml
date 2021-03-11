@@ -49,10 +49,15 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  #<<: *default
-  adapter: mysql2
+  <<: *default
+  #adapter: mysql2
   database: app_track_api_production
-  username: sagar
-  password: Dsagar!123
-  # username: app_track_api
-  # password: <%= ENV['APP_TRACK_API_DATABASE_PASSWORD'] %>
+  #username: sagar
+  #password: Dsagar!123
+  username: app_track_api
+  password: <%= ENV['APP_TRACK_API_DATABASE_PASSWORD'] %>
+
+  # <<: *default
+  # database: app_track_api1_production
+  # username: app_track_api1
+  # password: <%= ENV['APP_TRACK_API1_DATABASE_PASSWORD'] %>
