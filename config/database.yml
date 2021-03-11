@@ -33,11 +33,11 @@ development:
 test:
   #<<: *default
   adapter: mysql2
-  encoding: utf8mb4
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: sagar
-  password: Dsagar!123
-  socket: /var/run/mysqld/mysqld.sock
+  # encoding: utf8mb4
+  # pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  # username: sagar
+  # password: Dsagar!123
+  #socket: /var/run/mysqld/mysqld.sock
   database: app_track_api_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
