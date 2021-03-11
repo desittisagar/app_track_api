@@ -1,4 +1,4 @@
-#!//home/sagar/.rvm/rubies/ruby-3.0.0/bin/env ruby
+#!/home/sagar/.rvm/rubies/ruby-3.0.0/bin ruby
 require "fileutils"
 
 # path to your application root.
