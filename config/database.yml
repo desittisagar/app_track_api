@@ -58,11 +58,14 @@ production:
   #<<: *default
   #adapter: mysql2
   adapter: mysql2
-  encoding: utf8mb4
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: sagar
-  password: Dsagar!123
-  database: app_track_api_production
+  advisory_locks: false
+  # encoding: utf8mb4
+  # pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  # username: sagar
+  # password: Dsagar!123
+  # database: app_track_api_production
+
+
   #username: app_track_api
   #password: <%= ENV['APP_TRACK_API_DATABASE_PASSWORD'] %>
 
