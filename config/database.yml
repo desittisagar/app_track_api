@@ -18,7 +18,13 @@ default: &default
   socket: /var/run/mysqld/mysqld.sock
 
 development:
-  <<: *default
+  #<<: *default
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: sagar
+  password: Dsagar!123
+  socket: /var/run/mysqld/mysqld.sock
   database: app_track_api_development
 
 # Warning: The database defined as "test" will be erased and
@@ -49,13 +55,16 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
+  #<<: *default
   #adapter: mysql2
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: sagar
+  password: Dsagar!123
   database: app_track_api_production
-  #username: sagar
-  #password: Dsagar!123
-  username: app_track_api
-  password: <%= ENV['APP_TRACK_API_DATABASE_PASSWORD'] %>
+  #username: app_track_api
+  #password: <%= ENV['APP_TRACK_API_DATABASE_PASSWORD'] %>
 
   # <<: *default
   # database: app_track_api1_production
