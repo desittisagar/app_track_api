@@ -50,6 +50,9 @@ test:
 #
 production:
   <<: *default
+  adapter: mysql2
   database: app_track_api_production
-  username: app_track_api
-  password: <%= ENV['APP_TRACK_API_DATABASE_PASSWORD'] %>
+  username: sagar
+  password: Dsagar!123
+  # username: app_track_api
+  # password: <%= ENV['APP_TRACK_API_DATABASE_PASSWORD'] %>
