@@ -1,4 +1,4 @@
-#!/home/sagar/.rvm/rubies/ruby-3.0.0/bin/ruby ruby
+#!/usr/bin/env ruby
 load File.expand_path("spring", __dir__)
 require_relative "../config/boot"
 require "rake"

@@ -1,4 +1,4 @@
-#!/home/sagar/.rvm/rubies/ruby-3.0.0/bin/ruby ruby3.0
+#!/usr/bin/env ruby
 # frozen_string_literal: true
 
 #
