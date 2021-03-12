@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2021_03_11_105230) do
 
-  create_table "admins", charset: "utf8mb4", force: :cascade do |t|
+  create_table "admins", force: :cascade do |t|
     t.string "name"
     t.bigint "phone"
     t.datetime "created_at", precision: 6, null: false
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2021_03_11_105230) do
     t.integer "otp"
   end
 
-  create_table "apply_statuses", charset: "utf8mb4", force: :cascade do |t|
+  create_table "apply_statuses", force: :cascade do |t|
     t.integer "jid"
     t.integer "cid"
     t.string "job_title"
@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 2021_03_11_105230) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "candidates", charset: "utf8mb4", force: :cascade do |t|
+  create_table "candidates", force: :cascade do |t|
     t.string "name", null: false
     t.string "email", null: false
     t.integer "age"
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 2021_03_11_105230) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "jobs", charset: "utf8mb4", force: :cascade do |t|
+  create_table "jobs", force: :cascade do |t|
     t.string "title"
     t.string "category"
     t.integer "yoe"
